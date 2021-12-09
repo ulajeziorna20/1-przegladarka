@@ -16,7 +16,6 @@ const createElement = (elType, elAttrs, elProps) => {
       newEl[key] = elProps[key]
     }
   }
-
   return newEl
 }
 
@@ -101,22 +100,19 @@ btnGenerateNumbers.addEventListener('click', () => {
   for (const num of arrEvenNumbers) {
     const liElement = createElement(
       'li',
-      {class: 'item-even-number'},
-      {innerText: num}
+      { class: 'item-even-number' },
+      { innerText: num }
     )
     ulEvenNumbers.appendChild(liElement)
-    
+
   }
-
-
- 
 
   // create elements of odd numbers and add it to dom
   for (const num of arrOddNumbers) {
     const liElement = createElement(
       'li',
-      {class: 'item-even-number'},
-      {innerText: num}
+      { class: 'item-even-number' },
+      { innerText: num }
     )
     ulOddNumbers.appendChild(liElement)
   }
