@@ -1,0 +1,60 @@
+body {
+  /* dlaczego po zrobieniu tej komendy dopiero mi sie wysrodkowaly kolumny w mojej sekcji??? a nie przez justify-content w .random-numbers??? */
+  text-align: center;
+}
+
+.random-numbers {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(4, 33, 71);
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+span {
+  color: rgb(176, 213, 255);
+  font-weight: bold;
+}
+
+.container-btn {
+  flex-basis: 100%;
+}
+
+.btn-generate-numbers {
+  font-weight: 600;
+  width: 120px;
+  height: 60px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.btn-generate-numbers:hover {
+  background-color: rgb(115, 176, 255);
+}
+
+.odd-numbers {
+  flex-basis: 50%;
+  height: 400px;
+}
+
+.even-numbers {
+  flex-basis: 50%;
+  height: 400px;
+}
+
+.numbers-list-item {
+  color: white;
+}
+
+li {
+  list-style: none;
+
+}
+
+ul {
+  /* jesli chcesz wysrodkowac elementy listy ul ktora jest w innym kontenerze to usun najpierw paddingi (padding jest od elementu margin od zewnatrz :)) */
+ padding-left: 0;
+}
