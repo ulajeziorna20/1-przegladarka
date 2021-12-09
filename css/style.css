@@ -1,17 +1,10 @@
-body {
+/* body {
   /* dlaczego po zrobieniu tej komendy dopiero mi sie wysrodkowaly kolumny w mojej sekcji??? a nie przez justify-content w .random-numbers??? */
-  text-align: center;
-}
+  /* text-align: center;
+} */ */
 
-.random-numbers {
-  width: 50%;
-  height: 500px;
-  background-color: rgb(4, 33, 71);
-  display: flex;
-  align-items: center;
-  /* justify-content: space-around; */
-  flex-wrap: wrap;
-  flex-direction: row;
+section#mainContainer.container {
+background-color: red;
 }
 
 span {
@@ -45,14 +38,12 @@ span {
   height: 400px;
 }
 
-.numbers-list-item {
-  color: white;
-}
-
 li {
+  color: black;
   list-style: none;
-
 }
+
+
 
 ul {
   /* jesli chcesz wysrodkowac elementy listy ul ktora jest w innym kontenerze to usun najpierw paddingi (padding jest od elementu margin od zewnatrz :)) */

@@ -89,13 +89,35 @@ btnGenerateNumbers.addEventListener('click', () => {
   )
   mainContainer.appendChild(divOddNumbers)
 
+
+  const ulOddNumbers = createElement(
+    'ul',
+    { class: 'oddNumbersList', id: 'oddNumbersList' },
+    {}
+  )
+  divOddNumbers.appendChild(ulOddNumbers)
+
   // create elements of even numbers and add it to dom
   for (const num of arrEvenNumbers) {
-    // const
+    const liElement = createElement(
+      'li',
+      {class: 'item-even-number'},
+      {innerText: num}
+    )
+    ulEvenNumbers.appendChild(liElement)
+    
   }
+
+
+ 
 
   // create elements of odd numbers and add it to dom
   for (const num of arrOddNumbers) {
-    // const
+    const liElement = createElement(
+      'li',
+      {class: 'item-even-number'},
+      {innerText: num}
+    )
+    ulOddNumbers.appendChild(liElement)
   }
 })
