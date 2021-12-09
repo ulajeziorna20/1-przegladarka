@@ -53,8 +53,12 @@ btnGenerateNumbers.addEventListener('click', () => {
   }
 
   // sort arrays
-  arrEvenNumbers.sort()
-  arrOddNumbers.sort()
+  arrEvenNumbers.sort((a, b) => {
+    return a - b
+  })
+  arrOddNumbers.sort((a, b) => {
+    return a - b
+  })
 
   // check if divEvenNumbers && divOddNumbers exist and remove them if so ;)
   let divEvenNumbers = document.querySelector('#evenNumbersContainer')
