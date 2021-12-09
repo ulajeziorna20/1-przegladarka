@@ -22,6 +22,7 @@ const randomGenerate = (min, max) => (Math.floor(Math.random() * (max - min)) + 
 
 
 
+
 const compareNumbers = (a, b) => {
   return a - b
 }
